@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="firmware">
-	<id>io.tmsp.linux-surface.sb2.me</id>
+	<id>io.tmsp.linux-surface-firmware.sb2.me</id>
 	<provides>
 		<firmware type="flashed">2b1811d7-7e5c-49e9-b04e-e4e048605158</firmware>
 	</provides>

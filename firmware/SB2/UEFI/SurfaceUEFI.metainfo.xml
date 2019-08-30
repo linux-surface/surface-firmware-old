@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="firmware">
-	<id>io.tmsp.linux-surface.sb2.surface_uefi</id>
+	<id>io.tmsp.linux-surface-firmware.sb2.uefi</id>
 	<provides>
 		<firmware type="flashed">6726b589-d1de-4f26-b2d7-7ac953210d39</firmware>
 	</provides>

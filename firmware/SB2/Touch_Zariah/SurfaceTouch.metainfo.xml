@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="firmware">
-	<id>io.tmsp.linux-surface.sb2.touch_zariah</id>
+	<id>io.tmsp.linux-surface-firmware.sb2.touch_zariah</id>
 	<provides>
 		<firmware type="flashed">5917bcbe-626f-4b76-89d1-b0a8b7a6707a</firmware>
 	</provides>

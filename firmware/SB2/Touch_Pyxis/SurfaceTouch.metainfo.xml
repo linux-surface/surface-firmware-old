@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="firmware">
-	<id>io.tmsp.linux-surface.sb2.touch_pyxis</id>
+	<id>io.tmsp.linux-surface-firmware.sb2.touch_pyxis</id>
 	<provides>
 		<firmware type="flashed">5773662e-2343-48b5-b018-db09eae2ea41</firmware>
 	</provides>
