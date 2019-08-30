@@ -1,0 +1,53 @@
+;
+; SurfaceTouch.inf
+;
+; Copyright (C) 2017 Microsoft Corporation.  All Rights Reserved.
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=10/03/2017,238.0.1.1
+PnpLockdown=1
+CatalogFile=SurfaceTouch.cat
+
+[Manufacturer]
+%MfgName% = Firmware,NTamd64
+
+[Firmware.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{5917BCBE-626F-4B76-89D1-B0A8B7A6707A}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+SurfaceTouch_2.238.0.1.69.1.bin
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{5917BCBE-626F-4B76-89D1-B0A8B7A6707A}
+HKR,,FirmwareVersion,%REG_DWORD%,0xEE000101
+HKR,,FirmwareFilename,,SurfaceTouch_2.238.0.1.69.1.bin
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfaceTouch_2.238.0.1.69.1.bin = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface Touch"
+DiskName     = "Surface Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
