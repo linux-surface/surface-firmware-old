@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+	<id>io.tmsp.linux-surface.sb2.ish</id>
+	<provides>
+		<firmware type="flashed">7a8be0e8-239e-452c-8281-ca184427982c</firmware>
+	</provides>
+	<name>Microsoft Surface Book 2</name>
+	<summary>ISH Firmware for SB2, version 36.567.12</summary>
+	<description>
+		Updating the firmware on your device improves performance and adds new features.
+	</description>
+	<categories>
+		<category>X-Device</category>
+	</categories>
+	<custom>
+		<value key="LVFS::UpdateProtocol">org.uefi.capsule</value>
+	</custom>
+	<url type="homepage">https://www.microsoft.com</url>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>proprietary</project_license>
+	<developer_name>Microsoft</developer_name>
+	<releases>
+		<release version="36.567.12" timestamp="1500501600">
+			<!-- Release is so old, it doesn't appear on the Surface Update History site -->
+		</release>
+	</releases>
+</component>
