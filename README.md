@@ -1,4 +1,5 @@
 # Firmware updates for linux-surface
+
 Usually if you want to install firmware updates on your surface, you *have* to 
 reinstall Windows or dualboot it. There is no way to install firmware updates
 from within Linux.
@@ -13,6 +14,8 @@ done is convert them into a format that `fwupd` can read. Again, it comes handy
 that `fwupd` already supports the format that is used by Windows Update (to make
 it easier for vendors to support LVFS, I assume). The only thing that needs to 
 be added is a small file that contains `fwupd` specific metadata.
+
+**This is not related to Microsoft or the LVFS in any way.**
 
 ## How to get the firmware files
 Ironically, an out of the box Windows installation has about as much support for
