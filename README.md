@@ -148,12 +148,6 @@ mode exists. Please be careful!**
 $ fwupdmgr install <path/to/cab/file>
 ```
 
-## Version Number Chaos
-`fwupd` reads different version numbers than the packages from Microsoft use.
-I assume that they won't change either, so it is possible that `fwupd` complains
-that a firmware is older that what is already installed. We need to monitor that,
-and in the worst case tell people to force the update.
-
 ## Driver Firmware
 As part of my adventures I also took the opportunity to update the driver firmware
 that jakedays setup script installs to the latest versions from the MS driver 
