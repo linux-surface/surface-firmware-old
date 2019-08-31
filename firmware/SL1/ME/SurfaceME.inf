@@ -1,0 +1,53 @@
+;
+; SurfaceME.inf
+; 11.8.56.3522
+; Copyright (C) 2018 Microsoft Corporation.  All Rights Reserved.
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=11/15/2018,11.8.56.3522
+PnpLockdown=1
+CatalogFile=SurfaceME.cat
+
+[Manufacturer]
+%MfgName% = Firmware,NTamd64
+
+[Firmware.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{A42666A6-8815-43F6-9B15-BCA91DEE99E3}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+SurfaceME_11.8.56.3522.bin
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{A42666A6-8815-43F6-9B15-BCA91DEE99E3}
+HKR,,FirmwareVersion,%REG_DWORD%,0xB8380DC2
+HKR,,FirmwareFilename,,SurfaceME_11.8.56.3522.bin
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfaceME_11.8.56.3522.bin = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Intel"
+FirmwareDesc = ""Surface ME""
+DiskName     = "Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
