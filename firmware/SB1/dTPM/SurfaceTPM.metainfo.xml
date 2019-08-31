@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+	<id>io.tmsp.linux-surface-firmware.sb1.tpm</id>
+	<provides>
+		<firmware type="flashed">bb5d5498-5bc2-4db7-be46-2241083eb8ae</firmware>
+	</provides>
+	<name>Microsoft Surface Book</name>
+	<summary>TPM Firmware for SB1, version 5.62.3126.2</summary>
+	<description>
+		Updating the firmware on your device improves performance and adds new features.
+	</description>
+	<categories>
+		<category>X-Device</category>
+	</categories>
+	<custom>
+		<value key="LVFS::UpdateProtocol">org.uefi.capsule</value>
+	</custom>
+	<url type="homepage">https://www.microsoft.com</url>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>proprietary</project_license>
+	<developer_name>Microsoft</developer_name>
+	<releases>
+		<!-- version: "5.62.3126.2" -->
+		<release version="62.12.13826" timestamp="1505340000">
+			<description>
+				<p>5.62.3126.2 improves reliability and resolves potential security vulnerabilities, including Microsoft security advisory 170012.</p>
+				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+			</description>
+		</release>
+	</releases>
+</component>
