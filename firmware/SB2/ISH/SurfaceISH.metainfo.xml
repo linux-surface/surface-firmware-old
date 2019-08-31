@@ -20,7 +20,7 @@
 	<project_license>proprietary</project_license>
 	<developer_name>Microsoft</developer_name>
 	<releases>
-		<release version="36.567.12" timestamp="1500501600">
+		<release version="36.2.14092" timestamp="1500501600">
 			<!-- Release is so old, it doesn't appear on the Surface Update History site -->
 		</release>
 	</releases>

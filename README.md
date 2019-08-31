@@ -66,17 +66,37 @@ exist.
 The hardware GUID, the version number and the version timestamp can be scraped 
 from the `.inf` file inside of the firmware directory.
 
-```inf
+```ini
 DriverVer=04/18/2019,389.2706.768.0
 ```
 
-First entry is the date when the driver was released, the second one is the version
-number. You have to convert that date into an unix timestamp, and then entered
-into the metadata file, like this:
+First entry is the date when the driver was released, you have to convert that
+date into an unix timestamp, and then enter it into the metadata file. The
+second number might appear like a version number, and it is one, but it is not
+the one that gets read by `fwupd` for checking if the version is already
+installed. That number is on the line above, encoded as a hexadecimal number.
+
+```ini
+HKR,,FirmwareVersion,%REG_DWORD%,0x616A4B00
+```
+
+`fwupd` has some logic to interpret that number as a triplet version number,
+which I replicated in the `getver.sh` script:
+
+```bash
+$ ./getver.sh 0x616A4B00
+97.106.19200
+```
+
+This is the version number you have to enter in the metadata file, like this:
 
 ```xml
-<release version="389.2706.768" timestamp="1555538400"></release>
+<release version="97.106.19200" timestamp="1555538400"></release>
 ```
+
+For consistency, this is the only place where that number is used. The changelog
+contains Microsofts version number, so you can search for it on the official
+website.
 
 Now, look for something that looks like this:
 

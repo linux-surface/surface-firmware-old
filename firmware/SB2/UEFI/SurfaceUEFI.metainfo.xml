@@ -20,7 +20,7 @@
 	<project_license>proprietary</project_license>
 	<developer_name>Microsoft</developer_name>
 	<releases>
-		<release version="389.2706.768" timestamp="1555538400">
+		<release version="97.106.19200" timestamp="1555538400">
 			<description>
 				<p>389.2706.768.0 resolves potential security vulnerabilities, including Microsoft security advisory 190013.</p>
 				<p>The computer will be restarted automatically after updating BIOS completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
