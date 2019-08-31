@@ -5,7 +5,7 @@
 		<firmware type="flashed">6726b589-d1de-4f26-b2d7-7ac953210d39</firmware>
 	</provides>
 	<name>Microsoft Surface Book 2</name>
-	<summary>SurfaceUEFI for SB2, version 389.2706.768</summary>
+	<summary>SurfaceUEFI for SB2, version 389.2706.768.0</summary>
 	<description>
 		Updating the firmware on your device improves performance and adds new features.
 	</description>
@@ -20,7 +20,7 @@
 	<project_license>proprietary</project_license>
 	<developer_name>Microsoft</developer_name>
 	<releases>
-		<!-- version: "389.2706.768" -->
+		<!-- version: "389.2706.768.0" -->
 		<release version="97.106.19200" timestamp="1555538400">
 			<description>
 				<p>389.2706.768.0 resolves potential security vulnerabilities, including Microsoft security advisory 190013.</p>

@@ -22,7 +22,9 @@
 	<releases>
 		<!-- version: "238.0.1.69.1" -->
 		<release version="238.0.257" timestamp="1506981600">
-			<!-- Release is so old, it doesn't appear on the Surface Update History site -->
+			<description>
+				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+			</description>
 		</release>
 	</releases>
 </component>

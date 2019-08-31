@@ -5,7 +5,7 @@
 		<firmware type="flashed">ecd2803a-3501-4cba-e21c-f6bb1b34aa20</firmware>
 	</provides>
 	<name>Microsoft Surface Book</name>
-	<summary>SAM Firmware for SB1, version 90.1837.256</summary>
+	<summary>SAM Firmware for SB1, version 90.1837.256.0</summary>
 	<description>
 		Updating the firmware on your device improves performance and adds new features.
 	</description>
@@ -20,7 +20,7 @@
 	<project_license>proprietary</project_license>
 	<developer_name>Microsoft</developer_name>
 	<releases>
-		<!-- version: "90.1837.256" -->
+		<!-- version: "90.1837.256.0" -->
 		<release version="22.156.46336" timestamp="1505340000">
 			<description>
 				<p>90.1837.256.0 improves reliability and resolves potential security vulnerabilities, including Microsoft security advisory 170012.</p>
