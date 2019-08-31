@@ -20,6 +20,7 @@
 	<project_license>proprietary</project_license>
 	<developer_name>Microsoft</developer_name>
 	<releases>
+		<!-- version: "11.8.50.3448" -->
 		<release version="184.50.3448" timestamp="1517785200">
 			<description>
 				<p>11.8.50.3448 Improves system stability.</p>

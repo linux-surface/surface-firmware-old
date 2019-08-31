@@ -7,7 +7,7 @@ mkdir -p $DIR/out
 for fw in "$@"
 do
 	pushd $fw
-		VERSION=$(grep -Po 'release version="[^"]+"' *.metainfo.xml | \
+		VERSION=$(grep -Po 'version: "[^"]+"' *.metainfo.xml | \
 			cut -d'"' -f2)
 		NAME=$(basename $fw)
 		MODEL=$(basename $(dirname $fw))
