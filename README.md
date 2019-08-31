@@ -74,9 +74,10 @@ First entry is the date when the driver was released, you have to convert that
 date into an unix timestamp, and then enter it into the metadata file. The
 second number might appear like a version number, and it is one, but it is not
 the one that gets read by `fwupd` for checking if the version is already
-installed. That number is on the line above, encoded as a hexadecimal number.
+installed. That number is on another line, encoded as a hexadecimal number.
 
 ```ini
+[Firmware_AddReg]
 HKR,,FirmwareVersion,%REG_DWORD%,0x616A4B00
 ```
 
