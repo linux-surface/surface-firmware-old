@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="firmware">l	<id>io.tmsp.linux-surface-firmware.sl1.touch</id>
+<component type="firmware">l	<id>io.tmsp.linux-surface-firmware.sl.touch</id>
 	<provides>
 		<firmware type="flashed">e359e1e1-f6ce-457a-a8c7-b296f2a8e061</firmware>
 	</provides>
 	<name>Microsoft Surface Laptop</name>
-	<summary>Touch Firmware for SL1, version 189.5.30.8</summary>
+	<summary>Touch Firmware for SL, version 189.5.30.8</summary>
 	<description>
 		Updating the firmware on your device improves performance and adds new features.
 	</description>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="firmware">
-	<id>io.tmsp.linux-surface-firmware.sl1.kip</id>
+	<id>io.tmsp.linux-surface-firmware.sl.sam</id>
 	<provides>
-		<firmware type="flashed">597868df-2e20-4c37-9549-228077d2dcb8</firmware>
+		<firmware type="flashed">53d1ef63-84c2-4fa2-bb99-b5872bde6d36</firmware>
 	</provides>
 	<name>Microsoft Surface Laptop</name>
-	<summary>KIP Firmware for SL1, version 135.2179.256.0</summary>
+	<summary>SAM Firmware for SL, version 145.210.139.0</summary>
 	<description>
 		Updating the firmware on your device improves performance and adds new features.
 	</description>
@@ -20,10 +20,10 @@
 	<project_license>proprietary</project_license>
 	<developer_name>Microsoft</developer_name>
 	<releases>
-		<!-- version: "135.2179.256.0" -->
-		<release version="33.226.3328" timestamp="1523570400">
+		<!-- version: "145.210.139.0" -->
+		<release version="145.0.53899" timestamp="1548716400">
 			<description>
-				<p>135.2179.256.0 improves system stability.</p>
+				<p>145.210.139.0 improves battery performance.</p>
 				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
 			</description>
 		</release>
