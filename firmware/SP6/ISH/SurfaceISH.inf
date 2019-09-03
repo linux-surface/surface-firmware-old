@@ -1,0 +1,53 @@
+;
+; SurfaceISH.inf
+;
+; Copyright (C) 2018 Microsoft Corporation.  All Rights Reserved.
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=07/05/2018,56.747.12.0
+PnpLockdown=1
+CatalogFile=SurfaceISH.cat
+
+[Manufacturer]
+%MfgName% = Firmware,NTamd64
+
+[Firmware.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{C361ABD2-AEB4-4413-9379-3D7287CAED65}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+SurfaceISH_56.747.12.bin
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{C361ABD2-AEB4-4413-9379-3D7287CAED65}
+HKR,,FirmwareVersion,%REG_DWORD%,0x3802EB0C
+HKR,,FirmwareFilename,,SurfaceISH_56.747.12.bin
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfaceISH_56.747.12.bin = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface Integrated Sensor Hub"
+DiskName     = "Surface Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001

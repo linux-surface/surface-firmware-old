@@ -1,0 +1,53 @@
+;
+; SurfaceSAM.inf
+;
+; Copyright (C) 2019 Microsoft Corporation.  All Rights Reserved.
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=02/27/2019,239.3101.139.0
+PnpLockdown=1
+CatalogFile=SurfaceSAM.cat
+
+[Manufacturer]
+%MfgName% = Firmware,NTamd64
+
+[Firmware.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{3624CD98-BDB6-461B-84A3-4F4853EFC7E3}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+SurfaceSAM_239.3101.139.bin
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{3624CD98-BDB6-461B-84A3-4F4853EFC7E3}
+HKR,,FirmwareVersion,%REG_DWORD%,0xEF0C1D8B
+HKR,,FirmwareFilename,,SurfaceSAM_239.3101.139.bin
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfaceSAM_239.3101.139.bin = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface System Aggregator"
+DiskName     = "Surface Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
