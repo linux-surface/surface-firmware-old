@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+	<id>io.tmsp.linux-surface-firmware.SurfaceStudio_1.UEFI</id>
+	<provides>
+		<firmware type="flashed">0603709b-92e8-4e49-8ed2-f065e2ad826b</firmware>
+	</provides>
+	<name>Surface Studio</name>
+	<summary>UEFI for Surface Studio, version 118.2749.768.0</summary>
+	<description>
+		<p>Updating the firmware on your device improves performance and adds new features.</p>
+	</description>
+	<categories>
+		<category>X-System</category>
+	</categories>
+	<custom>
+		<value key="LVFS::UpdateProtocol">org.uefi.capsule</value>
+	</custom>
+	<url type="homepage">https://www.microsoft.com</url>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>proprietary</project_license>
+	<developer_name>Microsoft</developer_name>
+	<releases>
+		<!-- version: "118.2749.768.0" -->
+		<release version="29.170.63232" timestamp="1559167200">
+			<description>
+				<p>118.2749.768.0 resolves potential security vulnerabilities, including Microsoft security advisory 190013.</p>
+				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+			</description>
+		</release>
+	</releases>
+</component>
