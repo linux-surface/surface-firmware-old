@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+	<id>io.tmsp.linux-surface-firmware.SurfaceBook_1.EC</id>
+	<provides>
+		<firmware type="flashed">22774a20-e21c-466b-905c-3583d74e873f</firmware>
+	</provides>
+	<name>Surface Book</name>
+	<summary>EC Firmware for Surface Book, version 90.2226.256.0</summary>
+	<description>
+		<p>Updating the firmware on your device improves performance and adds new features.</p>
+	</description>
+	<categories>
+		<category>X-EmbeddedController</category>
+	</categories>
+	<custom>
+		<value key="LVFS::UpdateProtocol">org.uefi.capsule</value>
+	</custom>
+	<url type="homepage">https://www.microsoft.com</url>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>proprietary</project_license>
+	<developer_name>Microsoft</developer_name>
+	<releases>
+		<!-- version: "90.2226.256.0" -->
+		<release version="22.162.51456" timestamp="1529445600">
+			<description>
+				<p>90.2226.256.0 enables the Battery Limit feature to UEFI settings.</p>
+				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+			</description>
+		</release>
+	</releases>
+</component>

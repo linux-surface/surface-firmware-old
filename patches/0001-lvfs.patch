@@ -1,0 +1,52 @@
+From 438d36f97331495e0161a9da6d1bcc08a9e760c3 Mon Sep 17 00:00:00 2001
+From: Dorian Stoll <dorian.stoll@tmsp.io>
+Date: Fri, 13 Sep 2019 21:18:16 +0200
+Subject: [PATCH] lvfs
+
+Signed-off-by: Dorian Stoll <dorian.stoll@tmsp.io>
+---
+ local.py             |  2 +-
+ lvfs/uploadedfile.py | 14 +++++++-------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/local.py b/local.py
+index a91ca30..0787b9c 100755
+--- a/local.py
++++ b/local.py
+@@ -34,7 +34,7 @@ def create_metadata(archive_dir, basename, metadata_fn):
+                 continue
+             print('Processing %s...' % filename)
+             ufile = UploadedFile()
+-            with open(os.path.join(root, filename), 'r') as f:
++            with open(os.path.join(root, filename), 'rb') as f:
+                 ufile.parse(filename, f.read(), use_hashed_prefix=False)
+             fws.append(ufile.fw)
+ 
+diff --git a/lvfs/uploadedfile.py b/lvfs/uploadedfile.py
+index a68385b..7a9c2e1 100644
+--- a/lvfs/uploadedfile.py
++++ b/lvfs/uploadedfile.py
+@@ -470,13 +470,13 @@ class UploadedFile:
+                 raise MetadataInvalid('LVFS::VersionFormat is required for integer version')
+ 
+         # allows OEM to specify protocol
+-        try:
+-            text = _node_validate_text(component.xpath('custom/value[@key="LVFS::UpdateProtocol"]')[0])
+-            if text not in self.protocol_map:
+-                raise MetadataInvalid('No valid UpdateProtocol {} found'.format(text))
+-            md.protocol_id = self.protocol_map[text]
+-        except IndexError as _:
+-            pass
++        # try:
++        #     text = _node_validate_text(component.xpath('custom/value[@key="LVFS::UpdateProtocol"]')[0])
++        #     if text not in self.protocol_map:
++        #         raise MetadataInvalid('No valid UpdateProtocol {} found'.format(text))
++        #     md.protocol_id = self.protocol_map[text]
++        # except IndexError as _:
++        #     pass
+ 
+         # allows OEM to set banned country codes
+         try:
+-- 
+2.21.0
+

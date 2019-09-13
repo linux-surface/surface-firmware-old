@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+	<id>io.tmsp.linux-surface-firmware.SurfacePro_5_6.SAM</id>
+	<provides>
+		<firmware type="flashed">3624cd98-bdb6-461b-84a3-4f4853efc7e3</firmware>
+	</provides>
+	<name>Surface Pro</name>
+	<summary>SAM Firmware for Surface Pro 5 and Surface Pro 6, version 239.3101.139.0</summary>
+	<description>
+		<p>Updating the firmware on your device improves performance and adds new features.</p>
+	</description>
+	<categories>
+		<category>X-Device</category>
+	</categories>
+	<custom>
+		<value key="LVFS::UpdateProtocol">org.uefi.capsule</value>
+	</custom>
+	<url type="homepage">https://www.microsoft.com</url>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>proprietary</project_license>
+	<developer_name>Microsoft</developer_name>
+	<releases>
+		<!-- version: "239.3101.139.0" -->
+		<release version="239.12.7563" timestamp="1551222000">
+			<description>
+				<p>239.3101.139.0 improves battery performance.</p>
+				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+			</description>
+		</release>
+	</releases>
+</component>
