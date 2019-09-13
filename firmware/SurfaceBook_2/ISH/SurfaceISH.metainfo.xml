@@ -5,7 +5,7 @@
 		<firmware type="flashed">7a8be0e8-239e-452c-8281-ca184427982c</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>ISH Firmware for Surface Book 2, version 36.567.12.0</summary>
+	<summary>ISH firmware for Surface Book 2, version 36.567.12.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

@@ -5,7 +5,7 @@
 		<firmware type="flashed">0fc24d6e-e5a4-4297-8c6c-57d9873bbcfb</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>SurfaceUEFI for Surface Book, version 91.2706.768.0</summary>
+	<summary>UEFI for Surface Book, version 91.2706.768.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

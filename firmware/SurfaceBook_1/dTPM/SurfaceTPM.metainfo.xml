@@ -5,7 +5,7 @@
 		<firmware type="flashed">bb5d5498-5bc2-4db7-be46-2241083eb8ae</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>TPM Firmware for Surface Book, version 5.62.3126.2</summary>
+	<summary>TPM firmware for Surface Book, version 5.62.3126.2</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

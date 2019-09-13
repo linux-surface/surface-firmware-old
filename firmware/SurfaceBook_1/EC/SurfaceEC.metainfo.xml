@@ -5,7 +5,7 @@
 		<firmware type="flashed">22774a20-e21c-466b-905c-3583d74e873f</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>EC Firmware for Surface Book, version 90.2226.256.0</summary>
+	<summary>EC firmware for Surface Book, version 90.2226.256.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

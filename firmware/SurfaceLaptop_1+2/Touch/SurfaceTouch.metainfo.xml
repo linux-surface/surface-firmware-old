@@ -5,7 +5,7 @@
 		<firmware type="flashed">e359e1e1-f6ce-457a-a8c7-b296f2a8e061</firmware>
 	</provides>
 	<name>Surface Laptop</name>
-	<summary>Touch Firmware for Surface Laptop and Surface Laptop 2, version 189.5.30.8</summary>
+	<summary>Touch firmware for Surface Laptop and Surface Laptop 2, version 189.5.30.8</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

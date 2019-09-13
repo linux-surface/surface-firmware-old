@@ -5,7 +5,7 @@
 		<firmware type="flashed">a9c020df-114d-420e-8890-a1436df3199c</firmware>
 	</provides>
 	<name>Surface Pro</name>
-	<summary>SurfaceUEFI for Surface Pro 5 and Surface Pro 6, version 234.2706.768.0</summary>
+	<summary>UEFI for Surface Pro 5 and Surface Pro 6, version 234.2706.768.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

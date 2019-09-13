@@ -5,7 +5,7 @@
 		<firmware type="flashed">a1575cb8-5184-49ab-a932-9c2146b68ded</firmware>
 	</provides>
 	<name>Surface Laptop</name>
-	<summary>SurfaceUEFI for Surface Laptop and Surface Laptop 2, version 137.2706.768.0</summary>
+	<summary>UEFI for Surface Laptop and Surface Laptop 2, version 137.2706.768.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

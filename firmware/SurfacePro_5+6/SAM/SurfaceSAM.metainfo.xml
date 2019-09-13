@@ -5,7 +5,7 @@
 		<firmware type="flashed">3624cd98-bdb6-461b-84a3-4f4853efc7e3</firmware>
 	</provides>
 	<name>Surface Pro</name>
-	<summary>SAM Firmware for Surface Pro 5 and Surface Pro 6, version 239.3101.139.0</summary>
+	<summary>SAM firmware for Surface Pro 5 and Surface Pro 6, version 239.3101.139.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

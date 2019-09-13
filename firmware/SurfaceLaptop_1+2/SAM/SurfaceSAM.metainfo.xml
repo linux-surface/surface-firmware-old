@@ -5,7 +5,7 @@
 		<firmware type="flashed">53d1ef63-84c2-4fa2-bb99-b5872bde6d36</firmware>
 	</provides>
 	<name>Surface Laptop</name>
-	<summary>SAM Firmware for Surface Laptop and Surface Laptop 2, version 145.210.139.0</summary>
+	<summary>SAM firmware for Surface Laptop and Surface Laptop 2, version 145.210.139.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

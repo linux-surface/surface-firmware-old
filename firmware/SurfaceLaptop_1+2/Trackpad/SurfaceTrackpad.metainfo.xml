@@ -5,7 +5,7 @@
 		<firmware type="flashed">38c67e06-e8ee-4acd-b031-35af2c95fef6</firmware>
 	</provides>
 	<name>Surface Laptop</name>
-	<summary>Trackpad Firmware for Surface Laptop and Surface Laptop 2, version 2.122.2683.0</summary>
+	<summary>Trackpad firmware for Surface Laptop and Surface Laptop 2, version 2.122.2683.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

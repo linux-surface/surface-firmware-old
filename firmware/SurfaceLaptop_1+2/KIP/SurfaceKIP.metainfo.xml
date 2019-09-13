@@ -5,7 +5,7 @@
 		<firmware type="flashed">597868df-2e20-4c37-9549-228077d2dcb8</firmware>
 	</provides>
 	<name>Surface Laptop</name>
-	<summary>KIP Firmware for Surface Laptop and Surface Laptop 2, version 135.2179.256.0</summary>
+	<summary>KIP firmware for Surface Laptop and Surface Laptop 2, version 135.2179.256.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

@@ -5,7 +5,7 @@
 		<firmware type="flashed">5917bcbe-626f-4b76-89d1-b0a8b7a6707a</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>Touch Firmware for Surface Book 2, version 238.0.1.69.1</summary>
+	<summary>Touch firmware for Surface Book 2, version 238.0.1.69.1</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

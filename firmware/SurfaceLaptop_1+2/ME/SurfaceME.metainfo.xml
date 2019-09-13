@@ -5,7 +5,7 @@
 		<firmware type="flashed">a42666a6-8815-43f6-9b15-bca91dee99e3</firmware>
 	</provides>
 	<name>Surface Laptop</name>
-	<summary>Intel ME Firmware for Surface Laptop and Surface Laptop 2, version 11.8.56.3522</summary>
+	<summary>Intel ME firmware for Surface Laptop and Surface Laptop 2, version 11.8.56.3522</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

@@ -5,7 +5,7 @@
 		<firmware type="flashed">8f215d83-7b9a-4bfa-9d73-65bdd3d157f7</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>Touch Firmware for Surface Book, version 58.2.94.23</summary>
+	<summary>Touch firmware for Surface Book, version 58.2.94.23</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

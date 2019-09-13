@@ -5,7 +5,7 @@
 		<firmware type="flashed">6294df86-b445-44eb-b5c0-0ae90b52ee23</firmware>
 	</provides>
 	<name>Surface Pro</name>
-	<summary>Intel ME Firmware for Surface Pro 5 and Surface Pro 6, version 11.8.50.3448</summary>
+	<summary>Intel ME firmware for Surface Pro 5 and Surface Pro 6, version 11.8.50.3448</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

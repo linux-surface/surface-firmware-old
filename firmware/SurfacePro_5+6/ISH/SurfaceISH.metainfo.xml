@@ -5,7 +5,7 @@
 		<firmware type="flashed">c361abd2-aeb4-4413-9379-3d7287caed65</firmware>
 	</provides>
 	<name>Surface Pro</name>
-	<summary>ISH Firmware for Surface Pro 5 and Surface Pro 6, version 56.747.12.0</summary>
+	<summary>ISH firmware for Surface Pro 5 and Surface Pro 6, version 56.747.12.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

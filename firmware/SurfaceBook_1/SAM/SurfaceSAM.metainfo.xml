@@ -5,7 +5,7 @@
 		<firmware type="flashed">ecd2803a-3501-4cba-e21c-f6bb1b34aa20</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>SAM Firmware for Surface Book, version 90.1837.256.0</summary>
+	<summary>SAM firmware for Surface Book, version 90.1837.256.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>

@@ -5,7 +5,7 @@
 		<firmware type="flashed">37da9c3d-6b50-4dbf-82b8-46ca912d98f2</firmware>
 	</provides>
 	<name>Surface Book</name>
-	<summary>SAM Firmware for Surface Book 2, version 182.512.137.0</summary>
+	<summary>SAM firmware for Surface Book 2, version 182.512.137.0</summary>
 	<description>
 		<p>Updating the firmware on your device improves performance and adds new features.</p>
 	</description>
