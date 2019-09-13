@@ -1,0 +1,38 @@
+;
+; SurfaceEC.inf
+;
+; Copyright (C) 2016 Microsoft Corporation.  All Rights Reserved.
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=06/17/2016,1.0.0.0
+PnpLockdown=1
+CatalogFile=SurfaceEC.cat
+
+[Manufacturer]
+%MfgName% = Firmware,NTamd64
+
+[Firmware.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{B652EEC4-A36B-4AAD-BA73-DDFBA8A9D234}
+
+[Firmware_Install.NT]
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{B652EEC4-A36B-4AAD-BA73-DDFBA8A9D234}
+HKR,,FirmwareVersion,%REG_DWORD%,0x1
+
+[Strings]
+Provider     = "Microsoft"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface Embedded Controller Firmware"
+DiskName     = "Surface Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
