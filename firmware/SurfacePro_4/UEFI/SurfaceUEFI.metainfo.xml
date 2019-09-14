@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+	<id>io.tmsp.linux-surface-firmware.SurfacePro_4.UEFI</id>
+	<provides>
+		<firmware type="flashed">137f5d0a-b53b-45b3-aa77-8e6671ace16b</firmware>
+	</provides>
+	<name>Surface Pro</name>
+	<summary>UEFI for Surface Pro 4, version 108.2706.768.0</summary>
+	<description>
+		<p>Updating the firmware on your device improves performance and adds new features.</p>
+	</description>
+	<categories>
+		<category>X-System</category>
+	</categories>
+	<custom>
+		<value key="LVFS::UpdateProtocol">org.uefi.capsule</value>
+	</custom>
+	<url type="homepage">https://www.microsoft.com</url>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>proprietary</project_license>
+	<developer_name>Microsoft</developer_name>
+	<releases>
+		<!-- version: "108.2706.768.0" -->
+		<release version="27.42.19200" timestamp="1555538400">
+			<description>
+				<p>108.2706.768.0 resolves potential security vulnerabilities, including Microsoft security advisory 190013.</p>
+				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+			</description>
+		</release>
+	</releases>
+</component>
