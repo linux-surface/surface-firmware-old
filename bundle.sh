@@ -12,14 +12,20 @@ do
 		NAME=$(basename $fw)
 		MODEL=$(basename $(dirname $fw))
 
+		BINFILE=$(ls *.{bin,cap})
+		CATFILE=$(ls *.cat)
+		INFFILE=$(ls *.inf)
+
 		mkdir $DIR/tmp
 		cp *.metainfo.xml $DIR/tmp/firmware.metainfo.xml
-		cp *.bin $DIR/tmp/firmware.bin
-		cp *.cat $DIR/tmp/firmware.cat
-		cp *.inf $DIR/tmp/firmware.inf
-		sed -e "s|$(ls *.cat)|firmware.cat|g" -e "s|$(ls *.bin)|firmware.bin|g" \
+		cp $BINFILE $DIR/tmp/firmware.bin
+		cp $CATFILE $DIR/tmp/firmware.cat
+		cp $INFFILE $DIR/tmp/firmware.inf
+		sed -e "s|$CATFILE|firmware.cat|g" \
+			-e "s|$BINFILE|firmware.bin|g" \
 			-i $DIR/tmp/firmware.inf
-		$DIR/tools/lcab -n $DIR/tmp/* $DIR/out/$MODEL\_$NAME\_$VERSION.cab
+		$DIR/tools/lcab -n $DIR/tmp/* \
+			$DIR/out/$MODEL\_$NAME\_$VERSION.cab
 		rm -r $DIR/tmp
 	popd
 done
