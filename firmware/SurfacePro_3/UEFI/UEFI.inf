@@ -1,0 +1,51 @@
+; Copyright (C) 2013 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverSet={5F035EF2-1969-41E5-A6C6-738F88309D24}
+DriverVer=04/30/2019,3.11.2650.0
+PnpLockdown=1
+CatalogFile=UEFI.cat
+
+[Manufacturer]
+%MfgName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{5A2D987B-CB39-42FE-A4CF-D5D0ABAE3A08}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+UEFI.3.11.2650.0.cap
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{5A2D987B-CB39-42FE-A4CF-D5D0ABAE3A08}
+HKR,,FirmwareVersion,%REG_DWORD%,0x30B0A5A
+HKR,,FirmwareFilename,,UEFI.3.11.2650.0.cap
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+UEFI.3.11.2650.0.cap = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+	
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface Pro UEFI"
+DiskName     = "Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001

@@ -1,0 +1,50 @@
+; Copyright (C) 2013 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=05/15/2014,426.27.66.0
+PnpLockdown=1
+CatalogFile=TouchFirmware.cat
+
+[Manufacturer]
+%MfgName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{E5FFF56F-D160-4365-9E21-22B06F6746DD}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+TouchFirmware.426.27.66.0.cap
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{E5FFF56F-D160-4365-9E21-22B06F6746DD}
+HKR,,FirmwareVersion,%REG_DWORD%,0x1AA1B42
+HKR,,FirmwareFilename,,TouchFirmware.426.27.66.0.cap
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+TouchFirmware.426.27.66.0.cap = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+	
+[Strings]
+; localizable
+Provider     = "N-Trig"
+MfgName      = "N-Trig"
+FirmwareDesc = "Surface Pro Touch Controller Firmware"
+DiskName     = "Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001

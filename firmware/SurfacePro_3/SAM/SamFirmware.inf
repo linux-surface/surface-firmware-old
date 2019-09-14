@@ -1,0 +1,51 @@
+; Copyright (C) 2013 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverSet={B05BBA76-97DA-4977-9EB0-019C4A301E6F}
+DriverVer=06/05/2016,3.9.850.0
+PnpLockdown=1
+CatalogFile=SamFirmware.cat
+
+[Manufacturer]
+%MfgName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{512B1F42-CCD2-403B-8118-2F54353A1226}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+SamFirmware.3.9.850.0.cap
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{512B1F42-CCD2-403B-8118-2F54353A1226}
+HKR,,FirmwareVersion,%REG_DWORD%,0x3090850
+HKR,,FirmwareFilename,,SamFirmware.3.9.850.0.cap
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SamFirmware.3.9.850.0.cap = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+	
+[Strings]
+; localizable
+Provider     = "Microsoft"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface Pro System Aggregator Firmware"
+DiskName     = "Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001

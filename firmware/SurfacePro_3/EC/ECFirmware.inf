@@ -1,0 +1,51 @@
+; Copyright (C) 2013 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverSet={F5D7C6A7-C5FE-45E8-97BE-D0348B8614DE}
+DriverVer=01/23/2019,38.16.85.0
+PnpLockdown=1
+CatalogFile=ECFirmware.cat
+
+[Manufacturer]
+%MfgName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{1004B6B0-10AA-40B7-B155-C92A60BB0E71}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+ECFirmware.38.16.85.0.cap
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{1004B6B0-10AA-40B7-B155-C92A60BB0E71}
+HKR,,FirmwareVersion,%REG_DWORD%,0x381685
+HKR,,FirmwareFilename,,ECFirmware.38.16.85.0.cap
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+ECFirmware.38.16.85.0.cap = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+	
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface Pro Embedded Controller Firmware"
+DiskName     = "Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
