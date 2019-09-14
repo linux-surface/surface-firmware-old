@@ -1,0 +1,53 @@
+;
+; SurfaceTPM.inf
+;
+; Copyright (C) 2017 Microsoft Corporation.  All Rights Reserved.
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=09/14/2017,5.62.3126.2
+PnpLockdown=1
+CatalogFile=SurfaceTPM.cat
+
+[Manufacturer]
+%MfgName% = Firmware,NTamd64
+
+[Firmware.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{C1FCB873-B084-4400-8C5B-B59B05B6D3AB}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+SurfaceTPM_5.62.3126.2.bin
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{C1FCB873-B084-4400-8C5B-B59B05B6D3AB}
+HKR,,FirmwareVersion,%REG_DWORD%,0x3E0C3602
+HKR,,FirmwareFilename,,SurfaceTPM_5.62.3126.2.bin
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfaceTPM_5.62.3126.2.bin = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Microsoft Corporation"
+FirmwareDesc = "Surface dTPM (IFX)"
+DiskName     = "Surface Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
