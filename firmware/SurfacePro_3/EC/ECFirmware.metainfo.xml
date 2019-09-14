@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+	<id>io.tmsp.linux-surface-firmware.SurfacePro_3.EC</id>
+	<provides>
+		<firmware type="flashed">1004b6b0-10aa-40b7-b155-c92a60bb0e71</firmware>
+	</provides>
+	<name>Surface Pro</name>
+	<summary>EC firmware for Surface Pro 3, version 38.16.85.0</summary>
+	<description>
+		<p>Updating the firmware on your device improves performance and adds new features.</p>
+	</description>
+	<categories>
+		<category>X-EmbeddedController</category>
+	</categories>
+	<custom>
+		<value key="LVFS::UpdateProtocol">org.uefi.capsule</value>
+	</custom>
+	<url type="homepage">https://www.microsoft.com</url>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>proprietary</project_license>
+	<developer_name>Microsoft</developer_name>
+	<releases>
+		<!-- version: "38.16.85.0" -->
+		<release version="0.56.5765" timestamp="1548198000">
+			<description>
+				<p>38.16.85.0 improves battery stability.</p>
+				<p>The computer will be restarted automatically after updating completely. Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+			</description>
+		</release>
+	</releases>
+</component>
