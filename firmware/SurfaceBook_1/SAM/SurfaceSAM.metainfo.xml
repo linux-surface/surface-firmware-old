@@ -24,7 +24,7 @@
 		<release version="22.156.46336" timestamp="1505340000">
 			<description>
 				<p>90.1837.256.0 improves reliability and resolves potential security vulnerabilities, including Microsoft security advisory 170012.</p>
-				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+				<p>The computer will be restarted automatically after updating completely. Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
 			</description>
 		</release>
 	</releases>

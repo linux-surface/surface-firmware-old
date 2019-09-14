@@ -24,7 +24,7 @@
 		<release version="22.162.51456" timestamp="1529445600">
 			<description>
 				<p>90.2226.256.0 enables the Battery Limit feature to UEFI settings.</p>
-				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+				<p>The computer will be restarted automatically after updating completely. Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
 			</description>
 		</release>
 	</releases>

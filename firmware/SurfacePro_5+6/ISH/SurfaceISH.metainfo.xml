@@ -24,7 +24,7 @@
 		<release version="56.2.60172" timestamp="1530741600">
 			<description>
 				<p>56.747.12.0 improves system stability and merges support for both Surface Pro (5th Gen) and Surface Pro (5th Gen) with LTE Advanced.</p>
-				<p>The computer will be restarted automatically after updating completely . Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
+				<p>The computer will be restarted automatically after updating completely. Do NOT turn off your computer or remove the AC adaptor while update is in progress.</p>
 			</description>
 		</release>
 	</releases>
