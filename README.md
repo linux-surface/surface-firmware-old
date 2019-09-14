@@ -17,6 +17,30 @@ be added is a small file that contains `fwupd` specific metadata.
 
 **This is not related to Microsoft or the LVFS in any way.**
 
+## Receiving firmware updates through fwupd automatically
+I have setup a remote for `fwupd`, that you can add to your system to recieive
+firmware updates automatically (either through the commandline or a `fwupd`
+frontend like GNOME Software). To install it, run these commands:
+
+**You are flashing your UEFI firmware on an extremely locked down UEFI.
+I am not responsible for damages to your hardware. I don't know if a recovery
+mode exists. Please be careful!**
+
+```bash
+# Add my gpg key to fwupd.
+$ sudo wget -O /etc/pki/fwupd-metadata/GPG-KEY-Linux-Surface-Firmware https://tmsp.io/fs/repos/fwupd/linux-surface/key.asc
+
+# Add the remote config to fwupd
+$ sudo wget -O /etc/fwupd/remotes.d/linux-surface.conf https://tmsp.io/fs/repos/fwupd/linux-surface/linux-surface.conf
+
+# List available updates
+$ fwupdmgr get-updates
+```
+
+In case you don't trust the automatic update you can also download the `.cab`
+files [manually](https://tmsp.io/fs/repos/fwupd/linux-surface/firmware) and
+install them yourself.
+
 ## How to get the firmware files
 Ironically, an out of the box Windows installation has about as much support for
 surface as Linux: No battery stats, no touchscreen etc. Microsoft provides a 
@@ -134,7 +158,7 @@ The final bundles will be saved inside of the folder `out`. For details on how
 to build them manually, please look at the bundle script, or just ping me on 
 [Gitter](https://gitter.im/linux-surface)
 
-## Installing the firmware bundles
+## Installing the firmware bundles manually
 The bundle script will produce one `.cab` file per firmware update. You can 
 install them with `fwupdmgr`, the commandline interface for `fwupd`. `fwupd` 
 should come preinstalled with Ubuntu and Fedora, if not please install it.
