@@ -1,14 +1,14 @@
 ;
 ; SurfaceSAM.inf
 ;
-; Copyright (C) 2018 Microsoft Corporation.  All Rights Reserved.
+; Copyright (C) 2019 Microsoft Corporation.  All Rights Reserved.
 ;
 [Version]
 Signature="$WINDOWS NT$"
 Class=Firmware
 ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
 Provider=%Provider%
-DriverVer=07/19/2018,182.512.137.0
+DriverVer=09/11/2019,182.1004.139.0
 PnpLockdown=1
 CatalogFile=SurfaceSAM.cat
 
@@ -22,21 +22,21 @@ CatalogFile=SurfaceSAM.cat
 CopyFiles = Firmware_CopyFiles
 
 [Firmware_CopyFiles]
-SurfaceSAM_182.512.137.bin
+SurfaceSAM_182.1004.139.bin
 
 [Firmware_Install.NT.Hw]
 AddReg = Firmware_AddReg
 
 [Firmware_AddReg]
 HKR,,FirmwareId,,{37da9c3d-6b50-4dbf-82b8-46ca912d98f2}
-HKR,,FirmwareVersion,%REG_DWORD%,0xB6020089
-HKR,,FirmwareFilename,,SurfaceSAM_182.512.137.bin
+HKR,,FirmwareVersion,%REG_DWORD%,0xB603EC8B
+HKR,,FirmwareFilename,,SurfaceSAM_182.1004.139.bin
 
 [SourceDisksNames]
 1 = %DiskName%
 
 [SourceDisksFiles]
-SurfaceSAM_182.512.137.bin = 1
+SurfaceSAM_182.1004.139.bin = 1
 
 [DestinationDirs]
 DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
