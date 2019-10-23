@@ -8,7 +8,7 @@ Signature="$WINDOWS NT$"
 Class=Firmware
 ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
 Provider=%Provider%
-DriverVer=01/22/2019,103.2614.257.0
+DriverVer=09/03/2019,103.2851.256.0
 PnpLockdown=1
 CatalogFile=SurfaceEC.cat
 
@@ -22,21 +22,21 @@ CatalogFile=SurfaceEC.cat
 CopyFiles = Firmware_CopyFiles
 
 [Firmware_CopyFiles]
-SurfaceEC_103.2614.257.bin
+SurfaceEC_103.2851.256.bin
 
 [Firmware_Install.NT.Hw]
 AddReg = Firmware_AddReg
 
 [Firmware_AddReg]
 HKR,,FirmwareId,,{B0EA81E9-3290-4E17-A25C-64FA19EA2D19}
-HKR,,FirmwareVersion,%REG_DWORD%,0x19E8D901
-HKR,,FirmwareFilename,,SurfaceEC_103.2614.257.bin
+HKR,,FirmwareVersion,%REG_DWORD%,0x19EC8D00
+HKR,,FirmwareFilename,,SurfaceEC_103.2851.256.bin
 
 [SourceDisksNames]
 1 = %DiskName%
 
 [SourceDisksFiles]
-SurfaceEC_103.2614.257.bin = 1
+SurfaceEC_103.2851.256.bin = 1
 
 [DestinationDirs]
 DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
