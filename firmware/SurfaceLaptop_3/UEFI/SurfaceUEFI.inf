@@ -1,0 +1,53 @@
+;
+; SurfaceUEFI.inf
+; 6.22.140.0
+; Copyright (C) 2019 Microsoft Corporation.  All Rights Reserved.
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%Provider%
+DriverVer=10/14/2019,6.22.140.0
+PnpLockdown=1
+CatalogFile=SurfaceUEFI.cat
+
+[Manufacturer]
+%MfgName% = Firmware,NTamd64
+
+[Firmware.NTamd64]
+%FirmwareDesc% = Firmware_Install,UEFI\RES_{EC49117E-77C8-49F8-91E8-707E5CD4E37F}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+SurfaceUEFI_6.22.140.bin
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{EC49117E-77C8-49F8-91E8-707E5CD4E37F}
+HKR,,FirmwareVersion,%REG_DWORD%,0x600168C
+HKR,,FirmwareFilename,,SurfaceUEFI_6.22.140.bin
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfaceUEFI_6.22.140.bin = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware ; %SystemRoot%\Firmware
+
+[Strings]
+; localizable
+Provider     = "Surface"
+MfgName      = "Microsoft"
+FirmwareDesc = ""Surface UEFI""
+DiskName     = "Firmware Update"
+
+; non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
